@@ -28,6 +28,7 @@ loader.BorderColor3 = Color3.fromRGB(67, 67, 67)
 loader.BorderSizePixel = 2
 loader.Position = UDim2.new(0.380650282, 0, 0.376687109, 0)
 loader.Size = UDim2.new(0, 300, 0, 220)
+loader.Draggable = true
 
 loader2.Name = "loader2"
 loader2.Parent = loader
