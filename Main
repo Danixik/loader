@@ -1,20 +1,23 @@
--- loader made by danix $$$$ pls no steal :(((
+-- version 2.0 updated 23.09.2021 by danix
 
--- Local shit$:
+-- Locals:
 
 local ballzinyourjaws = Instance.new("ScreenGui")
 local loader = Instance.new("Frame")
 local loader2 = Instance.new("Frame")
-local Outline = Instance.new("Frame")
-local CheatLabelText = Instance.new("TextLabel")
-local StormyButton = Instance.new("TextButton")
-local BsButton = Instance.new("TextButton")
-local StormyKRNLButton = Instance.new("TextButton")
 local exit = Instance.new("TextButton")
 local UIGradient = Instance.new("UIGradient")
+local ScrollingFrame = Instance.new("ScrollingFrame")
+local StormyKRNLButton = Instance.new("TextButton")
+local BsButton = Instance.new("TextButton")
+local StormyButton = Instance.new("TextButton")
+local BloxWheels = Instance.new("TextButton")
+local CheatLabelText = Instance.new("TextLabel")
+local dc = Instance.new("TextButton")
+local Succes = Instance.new("TextLabel")
 local rbar = Instance.new("ImageLabel")
 
---yes:
+--random things:
 
 ballzinyourjaws.Name = "ballzinyourjaws"
 ballzinyourjaws.Parent = game.CoreGui
@@ -28,7 +31,6 @@ loader.BorderColor3 = Color3.fromRGB(67, 67, 67)
 loader.BorderSizePixel = 2
 loader.Position = UDim2.new(0.380650282, 0, 0.376687109, 0)
 loader.Size = UDim2.new(0, 300, 0, 220)
-loader.Draggable = true
 
 loader2.Name = "loader2"
 loader2.Parent = loader
@@ -37,80 +39,6 @@ loader2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 loader2.BorderSizePixel = 0
 loader2.Position = UDim2.new(0.0180760473, 0, 0.0199463461, 0)
 loader2.Size = UDim2.new(0, 290, 0, 212)
-
-Outline.Name = "Outline"
-Outline.Parent = loader2
-Outline.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-Outline.BorderColor3 = Color3.fromRGB(134, 134, 134)
-Outline.Position = UDim2.new(0.0241379309, 0, 0.0518867932, 0)
-Outline.Size = UDim2.new(0, 276, 0, 120)
-
-CheatLabelText.Name = "CheatLabelText"
-CheatLabelText.Parent = loader2
-CheatLabelText.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
-CheatLabelText.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CheatLabelText.BorderSizePixel = 0
-CheatLabelText.Position = UDim2.new(0.0439999998, 0, 0.0179999992, 0)
-CheatLabelText.Size = UDim2.new(0, 45, 0, 14)
-CheatLabelText.Font = Enum.Font.Code
-CheatLabelText.Text = "Cheat"
-CheatLabelText.TextColor3 = Color3.fromRGB(255, 255, 255)
-CheatLabelText.TextSize = 15.000
-CheatLabelText.TextStrokeTransparency = 0.850
-
-StormyButton.Name = "StormyButton"
-StormyButton.Parent = loader2
-StormyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-StormyButton.BackgroundTransparency = 1.000
-StormyButton.BorderSizePixel = 0
-StormyButton.Position = UDim2.new(0.0233103782, 0, 0.145999983, 0)
-StormyButton.Size = UDim2.new(0, 59, 0, 23)
-StormyButton.Font = Enum.Font.SourceSans
-StormyButton.Text = "Stormy"
-StormyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-StormyButton.TextSize = 18.000
-StormyButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
-StormyButton.TextStrokeTransparency = 0.600
-StormyButton.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/stormy", true))()
-	loader.Visible = false
-end)
-
-BsButton.Name = "BsButton"
-BsButton.Parent = loader2
-BsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-BsButton.BackgroundTransparency = 1.000
-BsButton.BorderSizePixel = 0
-BsButton.Position = UDim2.new(0.0520000011, 0, 0.294999987, 0)
-BsButton.Size = UDim2.new(0, 59, 0, 23)
-BsButton.Font = Enum.Font.SourceSans
-BsButton.Text = "Bloxsense"
-BsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-BsButton.TextSize = 18.000
-BsButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
-BsButton.TextStrokeTransparency = 0.600
-BsButton.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/BS", true))()
-	loader.Visible = false
-end)
-
-StormyKRNLButton.Name = "StormyKRNLButton"
-StormyKRNLButton.Parent = loader2
-StormyKRNLButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-StormyKRNLButton.BackgroundTransparency = 1.000
-StormyKRNLButton.BorderSizePixel = 0
-StormyKRNLButton.Position = UDim2.new(0.0919655189, 0, 0.453000009, 0)
-StormyKRNLButton.Size = UDim2.new(0, 59, 0, 23)
-StormyKRNLButton.Font = Enum.Font.SourceSans
-StormyKRNLButton.Text = "Stormy KRNL"
-StormyKRNLButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-StormyKRNLButton.TextSize = 18.000
-StormyKRNLButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
-StormyKRNLButton.TextStrokeTransparency = 0.600
-StormyKRNLButton.MouseButton1Click:Connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/zbMNReTA", true))()
-	loader.Visible = false
-end)
 
 exit.Name = "exit"
 exit.Parent = loader2
@@ -125,7 +53,7 @@ exit.TextSize = 24.000
 exit.TextStrokeColor3 = Color3.fromRGB(93, 93, 93)
 exit.TextStrokeTransparency = 0.000
 exit.TextWrapped = true
-exit.MouseButton1Click:Connect(function() --cool exit button B)
+exit.MouseButton1Click:Connect(function()
 	rbar.Visible = false
 	wait(0.1)
 	loader2.Visible = false
@@ -137,6 +65,131 @@ UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.from
 UIGradient.Rotation = 90
 UIGradient.Parent = exit
 
+ScrollingFrame.Parent = loader2
+ScrollingFrame.Active = true
+ScrollingFrame.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+ScrollingFrame.BorderColor3 = Color3.fromRGB(131, 131, 131)
+ScrollingFrame.Position = UDim2.new(0.0275861025, 0, 0.0518868491, 0)
+ScrollingFrame.Size = UDim2.new(0, 272, 0, 137)
+ScrollingFrame.ScrollBarThickness = 6
+
+StormyKRNLButton.Name = "StormyKRNLButton"
+StormyKRNLButton.Parent = ScrollingFrame
+StormyKRNLButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StormyKRNLButton.BackgroundTransparency = 1.000
+StormyKRNLButton.BorderSizePixel = 0
+StormyKRNLButton.Position = UDim2.new(0.0930000022, 0, 0.175999999, 0)
+StormyKRNLButton.Size = UDim2.new(0, 59, 0, 23)
+StormyKRNLButton.Font = Enum.Font.SourceSans
+StormyKRNLButton.Text = "Stormy KRNL"
+StormyKRNLButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+StormyKRNLButton.TextSize = 18.000
+StormyKRNLButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
+StormyKRNLButton.TextStrokeTransparency = 0.600
+StormyKRNLButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://pastebin.com/raw/zbMNReTA", true))()
+	loader.Visible = false
+end)
+
+BsButton.Name = "BsButton"
+BsButton.Parent = ScrollingFrame
+BsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BsButton.BackgroundTransparency = 1.000
+BsButton.BorderSizePixel = 0
+BsButton.Position = UDim2.new(0.057, 0, 0.101999998, 0)
+BsButton.Size = UDim2.new(0, 59, 0, 23)
+BsButton.Font = Enum.Font.SourceSans
+BsButton.Text = "Bloxsense"
+BsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BsButton.TextSize = 18.000
+BsButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
+BsButton.TextStrokeTransparency = 0.600
+BsButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/BS", true))()
+	loader.Visible = false
+end)
+
+StormyButton.Name = "StormyButton"
+StormyButton.Parent = ScrollingFrame
+StormyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StormyButton.BackgroundTransparency = 1.000
+StormyButton.BorderSizePixel = 0
+StormyButton.Position = UDim2.new(0.023, 0, 0.0270000007, 0)
+StormyButton.Size = UDim2.new(0, 59, 0, 23)
+StormyButton.Font = Enum.Font.SourceSans
+StormyButton.Text = "Stormy"
+StormyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+StormyButton.TextSize = 18.000
+StormyButton.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
+StormyButton.TextStrokeTransparency = 0.600
+StormyButton.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/stormy", true))()
+	loader.Visible = false
+end)
+
+BloxWheels.Name = "BloxWheels"
+BloxWheels.Parent = ScrollingFrame
+BloxWheels.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BloxWheels.BackgroundTransparency = 1.000
+BloxWheels.BorderSizePixel = 0
+BloxWheels.Position = UDim2.new(0.075000003, 0, 0.250999987, 0)
+BloxWheels.Size = UDim2.new(0, 59, 0, 23)
+BloxWheels.Font = Enum.Font.SourceSans
+BloxWheels.Text = "Bloxwheels"
+BloxWheels.TextColor3 = Color3.fromRGB(255, 255, 255)
+BloxWheels.TextSize = 18.000
+BloxWheels.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
+BloxWheels.TextStrokeTransparency = 0.600
+BloxWheels.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/bloxwheels", true))()
+	loader.Visible = false
+end)
+
+CheatLabelText.Name = "CheatLabelText"
+CheatLabelText.Parent = loader2
+CheatLabelText.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+CheatLabelText.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CheatLabelText.BorderSizePixel = 0
+CheatLabelText.Position = UDim2.new(0.0469999984, 0, 0.0179999992, 0)
+CheatLabelText.Size = UDim2.new(0, 45, 0, 14)
+CheatLabelText.Font = Enum.Font.Code
+CheatLabelText.Text = "Cheat"
+CheatLabelText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CheatLabelText.TextSize = 15.000
+CheatLabelText.TextStrokeTransparency = 0.850
+
+dc.Name = "dc"
+dc.Parent = loader2
+dc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+dc.BackgroundTransparency = 1.000
+dc.Position = UDim2.new(0.317241371, 0, 0.929245293, 0)
+dc.Size = UDim2.new(0, 106, 0, 15)
+dc.Font = Enum.Font.Code
+dc.Text = "made by danix"
+dc.TextColor3 = Color3.fromRGB(255, 255, 255)
+dc.TextSize = 14.000
+dc.MouseButton1Click:Connect(function()
+	setclipboard("https://discord.gg/AUqMGJRJmq")
+	Succes.Visible = true
+	wait(2)
+	Succes.Visible = false
+end)
+
+Succes.Name = "Succes"
+Succes.Parent = loader2
+Succes.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Succes.BorderColor3 = Color3.fromRGB(85, 85, 85)
+Succes.BorderSizePixel = 2
+Succes.Position = UDim2.new(0.155172408, 0, 1.0518868, 0)
+Succes.Size = UDim2.new(0, 200, 0, 27)
+Succes.Visible = false
+Succes.Font = Enum.Font.SourceSans
+Succes.Text = "Discord invite was succesfuly copied to clipboard"
+Succes.TextColor3 = Color3.fromRGB(255, 255, 255)
+Succes.TextScaled = true
+Succes.TextSize = 14.000
+Succes.TextWrapped = true
+
 rbar.Name = "rbar"
 rbar.Parent = loader
 rbar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -144,37 +197,9 @@ rbar.Position = UDim2.new(0.0166666675, 0, 0.0181818176, 0)
 rbar.Size = UDim2.new(0, 290, 0, 2)
 rbar.Image = "http://www.roblox.com/asset/?id=7503782681"
 
--- coding$$$$$$:
+-- Scripts:
 
-local function TEYM_fake_script() -- StormyButton.StormyButtonScript 
-	local script = Instance.new('LocalScript', StormyButton)
-
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.new(255, 0, 0)
-	end)
-	
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = Color3.new(255, 255, 255)
-	end)
-	
-	
-end
-coroutine.wrap(TEYM_fake_script)()
-local function BDKPUA_fake_script() -- BsButton.StormyButtonScript 
-	local script = Instance.new('LocalScript', BsButton)
-
-	script.Parent.MouseEnter:Connect(function()
-		script.Parent.TextColor3 = Color3.new(255, 0, 0)
-	end)
-	
-	script.Parent.MouseLeave:Connect(function()
-		script.Parent.TextColor3 = Color3.new(255, 255, 255)
-	end)
-	
-	
-end
-coroutine.wrap(BDKPUA_fake_script)()
-local function OOLKD_fake_script() -- StormyKRNLButton.StormyButtonScript 
+local function QGOLT_fake_script() -- StormyKRNLButton.StormyButtonScript 
 	local script = Instance.new('LocalScript', StormyKRNLButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -187,4 +212,46 @@ local function OOLKD_fake_script() -- StormyKRNLButton.StormyButtonScript
 	
 	
 end
-coroutine.wrap(OOLKD_fake_script)()
+coroutine.wrap(QGOLT_fake_script)()
+local function ZEHVN_fake_script() -- BsButton.StormyButtonScript 
+	local script = Instance.new('LocalScript', BsButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 0, 0)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 255, 255)
+	end)
+	
+	
+end
+coroutine.wrap(ZEHVN_fake_script)()
+local function MMQPO_fake_script() -- StormyButton.StormyButtonScript 
+	local script = Instance.new('LocalScript', StormyButton)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 0, 0)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 255, 255)
+	end)
+	
+	
+end
+coroutine.wrap(MMQPO_fake_script)()
+local function HULSSA_fake_script() -- BloxWheels.StormyButtonScript 
+	local script = Instance.new('LocalScript', BloxWheels)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 0, 0)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 255, 255)
+	end)
+	
+	
+end
+coroutine.wrap(HULSSA_fake_script)()
