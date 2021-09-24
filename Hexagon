@@ -1628,6 +1628,8 @@ local SettingsTabCategoryCredits = SettingsTab:AddCategory("Credits", 2)
 
 SettingsTabCategoryCredits:AddLabel("Script - Pawel12d#0272")
 
+SettingsTabCategoryCredits:AddLabel("Loader - Danix#9696")
+
 SettingsTabCategoryCredits:AddLabel("ESP - Modified Kiriot ESP")
 
 SettingsTabCategoryCredits:AddLabel("UI Library - Modified Phantom Ware")
