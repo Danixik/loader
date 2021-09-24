@@ -292,6 +292,6 @@ coroutine.wrap(PECTSTL_fake_script)()
 local function TLLFSAC_fake_script() -- dc.LocalScript 
 	local script = Instance.new('LocalScript', dc)
 
-	setclipboard(https://discord.gg/AUqMGJRJmq)
+	setclipboard("https://discord.gg/AUqMGJRJmq")
 end
 coroutine.wrap(TLLFSAC_fake_script)()
