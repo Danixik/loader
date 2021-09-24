@@ -1,6 +1,7 @@
--- version 2.0 updated 24.09.2021 by danix
+-- imagine "cracking" open source LOL
+-- made by Danix#9696
 
--- Locals:
+-- a:
 
 local ballzinyourjaws = Instance.new("ScreenGui")
 local loader = Instance.new("Frame")
@@ -12,12 +13,13 @@ local StormyKRNLButton = Instance.new("TextButton")
 local BsButton = Instance.new("TextButton")
 local StormyButton = Instance.new("TextButton")
 local BloxWheels = Instance.new("TextButton")
+local Hexagon = Instance.new("TextButton")
 local CheatLabelText = Instance.new("TextLabel")
 local dc = Instance.new("TextButton")
 local Succes = Instance.new("TextLabel")
 local rbar = Instance.new("ImageLabel")
 
---random things:
+-- e:
 
 ballzinyourjaws.Name = "ballzinyourjaws"
 ballzinyourjaws.Parent = game.CoreGui
@@ -145,6 +147,24 @@ BloxWheels.MouseButton1Click:Connect(function()
 	loader.Visible = false
 end)
 
+Hexagon.Name = "Hexagon"
+Hexagon.Parent = ScrollingFrame
+Hexagon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hexagon.BackgroundTransparency = 1.000
+Hexagon.BorderSizePixel = 0
+Hexagon.Position = UDim2.new(0.0489999987, 0, 0.32100001, 0)
+Hexagon.Size = UDim2.new(0, 59, 0, 23)
+Hexagon.Font = Enum.Font.SourceSans
+Hexagon.Text = "Hexagon"
+Hexagon.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hexagon.TextSize = 18.000
+Hexagon.TextStrokeColor3 = Color3.fromRGB(104, 104, 104)
+Hexagon.TextStrokeTransparency = 0.600
+Hexagon.MouseButton1Click:Connect(function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Danixik/loader/main/Hexagon", true))()
+	loader.Visible = false
+end)
+
 CheatLabelText.Name = "CheatLabelText"
 CheatLabelText.Parent = loader2
 CheatLabelText.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
@@ -197,9 +217,9 @@ rbar.Position = UDim2.new(0.0166666675, 0, 0.0181818176, 0)
 rbar.Size = UDim2.new(0, 290, 0, 2)
 rbar.Image = "http://www.roblox.com/asset/?id=7503782681"
 
--- Scripts:
+-- g:
 
-local function QGOLT_fake_script() -- StormyKRNLButton.StormyButtonScript 
+local function XRYSUEX_fake_script() -- StormyKRNLButton.StormyButtonScript 
 	local script = Instance.new('LocalScript', StormyKRNLButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -212,8 +232,8 @@ local function QGOLT_fake_script() -- StormyKRNLButton.StormyButtonScript
 	
 	
 end
-coroutine.wrap(QGOLT_fake_script)()
-local function ZEHVN_fake_script() -- BsButton.StormyButtonScript 
+coroutine.wrap(XRYSUEX_fake_script)()
+local function OYPWLG_fake_script() -- BsButton.StormyButtonScript 
 	local script = Instance.new('LocalScript', BsButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -226,8 +246,8 @@ local function ZEHVN_fake_script() -- BsButton.StormyButtonScript
 	
 	
 end
-coroutine.wrap(ZEHVN_fake_script)()
-local function MMQPO_fake_script() -- StormyButton.StormyButtonScript 
+coroutine.wrap(OYPWLG_fake_script)()
+local function XZMMI_fake_script() -- StormyButton.StormyButtonScript 
 	local script = Instance.new('LocalScript', StormyButton)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -240,8 +260,8 @@ local function MMQPO_fake_script() -- StormyButton.StormyButtonScript
 	
 	
 end
-coroutine.wrap(MMQPO_fake_script)()
-local function HULSSA_fake_script() -- BloxWheels.StormyButtonScript 
+coroutine.wrap(XZMMI_fake_script)()
+local function QDDLCMZ_fake_script() -- BloxWheels.StormyButtonScript 
 	local script = Instance.new('LocalScript', BloxWheels)
 
 	script.Parent.MouseEnter:Connect(function()
@@ -254,4 +274,24 @@ local function HULSSA_fake_script() -- BloxWheels.StormyButtonScript
 	
 	
 end
-coroutine.wrap(HULSSA_fake_script)()
+coroutine.wrap(QDDLCMZ_fake_script)()
+local function PECTSTL_fake_script() -- Hexagon.StormyButtonScript 
+	local script = Instance.new('LocalScript', Hexagon)
+
+	script.Parent.MouseEnter:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 0, 0)
+	end)
+	
+	script.Parent.MouseLeave:Connect(function()
+		script.Parent.TextColor3 = Color3.new(255, 255, 255)
+	end)
+	
+	
+end
+coroutine.wrap(PECTSTL_fake_script)()
+local function TLLFSAC_fake_script() -- dc.LocalScript 
+	local script = Instance.new('LocalScript', dc)
+
+	setclipboard(https://discord.gg/AUqMGJRJmq)
+end
+coroutine.wrap(TLLFSAC_fake_script)()
