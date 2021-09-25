@@ -1,6 +1,3 @@
-if game.CoreGui:FindFirstChild("BloxWheels") then
-    game.CoreGui.BloxWheels:Destroy()
-end
 local a = game:GetService("UserInputService")
 local b = game:GetService("TweenService")
 local c = game:GetService("HttpService")
